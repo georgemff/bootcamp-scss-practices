@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17711ada-7435-4e85-8418-dcbb8533dfd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/styles/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="283">
+              <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -99,6 +97,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -135,12 +134,12 @@
       <updated>1557757437725</updated>
       <workItem from="1557757439008" duration="1835000" />
       <workItem from="1557769208953" duration="973000" />
-      <workItem from="1557778862451" duration="1891000" />
+      <workItem from="1557778862451" duration="2142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4699000" />
+    <option name="totallyTimeSpent" value="4950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="24" width="959" height="1021" extended-state="4" />
@@ -161,7 +160,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291714" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3291714" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -209,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="283">
+          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
         </state>
       </provider>
     </entry>
