@@ -11,6 +11,19 @@ $color-4: #A1B1BC;
 $color-5: #2C3E50;
 $color-6: #F9B718;
 $color-7: #CFD2D3;
+$color-8: #F55C43;
+$color-9: #FD7761;
+$color-10: #D52E13;
+$color-11: #A47503;
+$color-12: #8781BD;
+$color-13: #A39CDC;
+$color-14: #5B568E;
+$color-15: #7BC200;
+$color-16: #97E411;
+$color-17: #558502;
+$color-18: #47B4F6;
+$color-19: #6Fd9FC;
+$color-20: #0787D4;
 
 
 body {
@@ -18,63 +31,118 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.alert {
-    display: flex;
-    position: relative;
-    width: 570px;
-    height: 150px;
-    border: 1px solid #E2E6E7;
-    border-radius: 10px;
-    padding-left: 49px;
-    padding-top: 42px;
-    margin-left: 50px;
-    margin-top: 50px;
+main {
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "alert right" "alert-bottom right-bottom" "full-width full-width";
+    grid-gap: 30px;
 
 
-    &::before {
-        content: '\f12a';
-        font-family: 'FontAwesome';
+    .alert {
         display: flex;
-        width: 50px;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-3;
-        border: 7px solid $color-6;
-        border-radius: 50%; 
-        flex-shrink: 0; 
-        font-size: 24px;
-        margin-right: 29px;      
+        position: relative;
+        width: 570px;
+        height: 150px;
+        border: 1px solid #E2E6E7;
+        border-radius: 10px;
+        padding-left: 49px;
+        padding-top: 42px;
+
+        grid-area: alert;
+
+        &.right {
+            grid-area: right;
+            &::before {
+              content: '\f00c';
+              border-color: $color-15;
+              background-color: $color-16;
+              color: $color-17;
+            }
+        }
+
+        &.right-bottom {
+            grid-area: right-bottom;
+          &::before {
+            content: '\f0e7';
+              border-color: $color-18;
+              background-color: $color-19;
+              color: $color-20;
+          }
+
+        }
+
+        &.alert-bottom {
+            grid-area: alert-bottom;
+          &::before {
+            content: '\f00d';
+              border-color: $color-8;
+              background-color: $color-9;
+              color: $color-10;
+          }
+        }
+
+        &.full-width {
+            width: 1170px;
+            grid-area: full-width;
+            &::before {
+                content: '\f129';
+                border-color: $color-12;
+                background-color: $color-13;
+                color: $color-14;
+            }
+
+        }
+
+        &::before {
+            content: '\f12a';
+            font-family: 'FontAwesome';
+            display: flex;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-3;
+            border: 7px solid $color-6;
+            border-radius: 50%;
+            flex-shrink: 0;
+            font-size: 24px;
+            margin-right: 29px;
+        }
+
+        div {
+            padding-right: 70px;
+
+            h2 {
+                font-size: 14px;
+                font-family: 'Lato', sans-serif;
+                line-height: 10px;
+                letter-spacing: 1.35px;
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #2C3E50;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: 'Lato', sans-serif;
+                line-height: 24px;
+                color: #A1B1BC;
+            }
+        }
+
+        a::before {
+            content: '\f00d';
+            font-family: 'FontAwesome';
+            position: absolute;
+            top: 17px;
+            right: 18px;
+            color: $color-7;
+            font-size: 14px;
+        }
+
+
     }
 
-    div {
-        padding-right: 70px;
-        h2 {
-            font-size: 14px;
-            font-family: 'Lato', sans-serif;
-            line-height: 10px;
-            letter-spacing: 1.35px;
-            text-transform: uppercase;
-            font-weight: 900;
-            color: #2C3E50;
-            margin-bottom: 14px;
-        }
-        p {
-            font-size: 14px;
-            font-family: 'Lato', sans-serif;
-            line-height: 24px;
-            color: #A1B1BC;
-        }
-    }
-   
-    a::before {
-        content: '\f00d';
-        font-family: 'FontAwesome';
-        position: absolute;
-        top: 17px;
-        right: 18px;
-        color: $color-7;
-        font-size: 14px;
-    }
-    
 }
