@@ -1,7 +1,6 @@
 main {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: 'alert right' 'alert-bottom right-bottom' 'full-width full-width';
+    display: flex;
+    flex-wrap: wrap;
     width: 1170px;
     margin: 0 auto;
 
@@ -11,15 +10,19 @@ main {
         grid-area: alert;
         width: 570px;
         height: 150px;
+        margin-top: 30px;
         padding-top: 42px;
         padding-left: 49px;
-        border: 1px solid #E2E6E7;
+        border: 1px solid $color-2;
         border-radius: 10px;
-        background-color: $color-3;
 
-        &.right {
-            grid-area: right;
-            background-color: $color-16;
+        &.solid {
+            background-color: $color-3;
+        }
+
+        &.success {
+            margin-top: 30px;
+            margin-left: 30px;
 
             &::before {
                 content: '\f00c';
@@ -27,11 +30,15 @@ main {
                 background-color: $color-16;
                 color: $color-17;
             }
+
+            &.solid {
+                background-color: $color-16;
+            }
         }
 
-        &.right-bottom {
-            grid-area: right-bottom;
-            background-color: $color-19;
+        &.flash {
+            margin-top: 30px;
+            margin-left: 30px;
 
             &::before {
                 content: '\f0e7';
@@ -39,11 +46,13 @@ main {
                 background-color: $color-19;
                 color: $color-20;
             }
+
+            &.solid {
+                background-color: $color-19;
+            }
         }
 
-        &.alert-bottom {
-            grid-area: alert-bottom;
-            background-color: $color-9;
+        &.error {
 
             &::before {
                 content: '\f00d';
@@ -51,18 +60,24 @@ main {
                 background-color: $color-9;
                 color: $color-10;
             }
+
+            &.solid {
+                background-color: $color-9;
+            }
         }
 
-        &.full-width {
-            grid-area: full-width;
+        &.info {
             width: 1170px;
-            background-color: $color-13;
 
             &::before {
                 content: '\f129';
                 border-color: $color-12;
                 background-color: $color-13;
                 color: $color-14;
+            }
+
+            &.solid {
+                background-color: $color-13;
             }
         }
 
@@ -78,6 +93,7 @@ main {
             border: 7px solid $color-6;
             border-radius: 50%;
             background-color: $color-3;
+            color: $color-11;
             font-family: 'FontAwesome', sans-serif;
             font-size: 24px;
         }
